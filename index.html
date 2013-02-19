@@ -32,6 +32,7 @@
             })();
         </script>
     </head>
+    <!-- <body onload="OnLoad()"> -->
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -62,8 +63,8 @@
                         <a class="nav-button"><img src="img/NavDropDown.png" alt="" width="33" height="17" /></a>
                         
                         <!-- Nav Drop -->
-                        <div class="nav-drop-tail"><img src="img/DropDownNavTail.png" alt="" width="20" height="15" /></div>
                         <div class="nav-drop-container">
+                            <div class="nav-drop-tail"><img src="img/DropDownNavTail.png" alt="" width="20" height="15" /></div>
                             <div class="nav-drop">
                                 <div class="nav-drop-element">HOME</div>
                                 <a class="nav-drop-element">STRATEGY</a>
@@ -147,10 +148,109 @@
                 </div>
             </div>
         </div>
-        <!-- End Content -->
+        <!-- End Vendors -->
+        
+        <!-- Top Footer -->
+        <div class="x-wrapper wrapper-4">
+            <div class="y-wrapper">
+                
+                <!-- Copyright -->
+                <div class="footer-left">
+                    <p class="topfooter">&copy; 2013 - 15 <span class="white">HillSouth</span>_iT solutions.</p>
+                </div>
+                <!-- End Copyright -->
+                
+                <!-- Buttons -->
+                <div class="footer-right">
+                    <div class="footer-buttons-container">
+                        <a id="sitemap-button" class="footer-button" href="#">Site Map</a>
+                        <!-- <a id="contactus-button" class="footer-button" href="#">Contact Us</a> -->
+
+                        <!-- Site Map Pop Up -->
+                        <div class="sitemap-container">
+                            <div class="sitemap">
+                                <a class="sitemap-header" href="#">Strategy</a>
+                                <ul class="sitemap-list">
+                                    <li><a href="#">Industries</a></li>
+                                    <li><a href="#">Managed Services</a></li>
+                                    <li><a href="#">Why Outsource?</a></li>
+                                </ul>
+                                <a class="sitemap-header" href="#">Solutions</a>
+                                <ul class="sitemap-list">
+                                    <li><a href="#">Complete Care</a></li>
+                                    <li><a href="#">Additional Services</a></li>
+                                    <li><a href="#">Case Studies</a></li>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                                <a class="sitemap-header" href="#">About</a>
+                                <ul class="sitemap-list nobottomborder">
+                                    <li><a href="#">Our Team</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">News and Events</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Partners</a></li>
+                                </ul>
+                            </div>
+                            <div class="sitemap-tail"><img src="img/FooterPopsTail.png" alt="" width="20" height="15" /></div>
+                        </div>
+                        <!-- End Site Map Pop Up -->
+
+                        <!-- Contact Us Pop Up -->
+                        <!-- <div class="contactus-container">
+                            <div class="contactus">
+                                <div id="map" class="contactus-map">&nbsp;</div>
+                                <div class="contactus-content">
+                                    <h1 class="contactcontenttitle"><span class="white">GET IN TOUCH</span></h1>
+                                    <p class="contactcontent"><span class="white">Please get in touch with us about additional information on HillSouth and its best-in-breed services. We are looking forward to hearing from you.</span></p>
+                                    <a class="contacttitle" href="#">USE OUR CONTACT FORM</a>
+                                    <p class="contactcontent"><span class="orange"><i>Hint: To use the map, click anywhere in this content area.&nbsp;&nbsp;:)</i></span></p>
+                                </div>
+                                <a class="footer-button contactus-content-button" href="#">Show Content</a>
+                            </div>
+                            <div class="contactus-tail"><img src="img/FooterPopsTail.png" alt="" width="20" height="15" /></div>
+                        </div> -->
+                        <!-- End Contact Us Pop Up -->
+
+                    </div>
+                    <div class="footer-social-container">
+                        <a class="footer-social" href="#"><img src="img/FooterFacebookOff.jpg" alt="Facebook" width="36" height="35" /></a>
+                        <a class="footer-social" href="#"><img src="img/FooterTwitterOff.jpg" alt="Twitter" width="36" height="35" /></a>
+                        <a class="footer-social social-last" href="#"><img src="img/FooterLinkedInOff.jpg" alt="LinkedIn" width="36" height="35" /></a>
+                    </div>
+                </div>
+                <!-- End Buttons -->
+                
+            </div>
+        </div>
+        <!-- End Top Footer -->
+
+        <!-- Bottom Footer -->
+        <div class="x-wrapper wrapper-5">
+            <div class="y-wrapper">
+
+                <!-- Important Links -->
+                <div class="bottomfooter-left">
+                    <a class="bottomfooter-link">About This Site</a>
+                    <a class="bottomfooter-link">Privacy Policy</a>
+                    <a class="bottomfooter-link">Terms of Use</a>
+                </div>
+                <!-- End Important Links -->
+
+                <!-- Phone -->
+                <div class="bottomfooter-right">
+                    <p class="bottomfooter">Support: 843-292-9070</p>
+                </div>
+                <!-- End Phone -->
+
+            </div>
+        </div>
+        <!-- End Bottom Footer -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script src="js/vendor/googlemapping.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
