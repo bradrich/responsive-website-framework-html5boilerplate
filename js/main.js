@@ -41,33 +41,33 @@
         // Show Site Map
         $('#sitemap-button').click(function(e){
             e.preventDefault();
-            if($('.contactus-container').is(":visible")){
-                $('.contactus-container').fadeOut(100);
-            }
-            $('.sitemap-container').slideToggle();
+            // if($('.contactus-container').is(":visible")){
+            //     $('.contactus-container').fadeOut(100);
+            // }
+            $('.sitemap-container').fadeToggle();
         });
 
         // Show Contact Us
-        $('#contactus-button').click(function(e){
-            e.preventDefault();
-            if($('.sitemap-container').is(":visible")){
-                $('.sitemap-container').fadeOut(100);
-            }
-            $('.contactus-container').slideToggle();
-        });
+        // $('#contactus-button').click(function(e){
+        //     e.preventDefault();
+        //     if($('.sitemap-container').is(":visible")){
+        //         $('.sitemap-container').fadeOut(100);
+        //     }
+        //     $('.contactus-container').slideToggle();
+        // });
 
         // Click Through Contact Us Content to Map
-        $('.contactus-content').click(function(){
-            $(this).fadeOut(200);
-            $('.contactus-content-button').fadeIn(200);
-        });
+        // $('.contactus-content').click(function(){
+        //     $(this).fadeOut(200);
+        //     $('.contactus-content-button').fadeIn(200);
+        // });
 
         // Show Contact Us Content Again on Button Click
-        $('.contactus-content-button'). click(function(e){
-            e.preventDefault();
-            $(this).fadeOut(200);
-            $('.contactus-content').fadeIn(200);
-        });
+        // $('.contactus-content-button'). click(function(e){
+        //     e.preventDefault();
+        //     $(this).fadeOut(200);
+        //     $('.contactus-content').fadeIn(200);
+        // });
 
     });
 

@@ -97,16 +97,26 @@ textarea { resize: vertical; }
    ========================================================================== */
    
 /* Background */
-body { background: #fafafa url('../img/BkgdSlice.jpg') repeat top center; }
+body { background: #221E13; }
 
 /* Wrappers */
-.x-wrapper { width: 100%; float: left; }
+/*.x-wrapper { width: 100%; float: left; background: url('../img/BkgdSlice.jpg') repeat top center; }
 .wrapper-1 { height: 1px; background: #BFBAA7; }
 .wrapper-2-2 { background: url('../img/NavBkgd.jpg') no-repeat top center; position: fixed; top: 0; z-index: 9999; overflow: visible; font-size: 15px; line-height: 19px; font-weight: bold; }
 .wrapper-3 { background: url('../img/BkgdTopGlow.jpg') no-repeat top center; }
 .wrapper-3-2 { background: url('../img/BkgdClouds.jpg') no-repeat bottom center; }
+.wrapper-bottomglow { background: url('../img/BkgdBottomGlow.jpg') no-repeat bottom center; }
 .wrapper-4 { background: #292519; }
-.wrapper-5 { background: #221E13; }
+.wrapper-5 { background: #221E13; }*/
+
+.x-wrapper-main, .x-wrapper-topanchor, .x-wrapper-navtopglow, .x-wrapper-nav, .x-wrapper-header, .x-wrapper-homeheader, .x-wrapper-bottom, .x-wrapper-topfooter, .x-wrapper-bottomfooter { width: 100%; float: left; }
+.x-wrapper-main { background: url('../img/BkgdSlice.jpg') repeat top center; } /* Repeating Background Subtle Texture */
+.x-wrapper-topanchor { height: 1px; background: #bfbaa7; } /* Top Anchor */
+.x-wrapper-nav { background: url('../img/NavBkgd.jpg') no-repeat top center; position: fixed; top: 0; z-index: 9999; overflow: visible; font-size: 15px; line-height: 19px; font-weight: bold; } /* Nav */
+.x-wrapper-header { background: url('../img/BkgdTopGlow.jpg') no-repeat top center; } /* Top Glow For Main Content Area */
+.x-wrapper-homeheader { background: url('../img/BkgdClouds.jpg') no-repeat bottom center; } /* Background Clouds For Home Header */
+.x-wrapper-bottom { background: url('../img/BkgdBottomGlow.jpg') no-repeat bottom center; } /* Bottom Glow For Sub Content Area */
+.x-wrapper-topfooter { background: #292519; } /* Top Footer */
 
 .y-wrapper { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
 
@@ -169,7 +179,7 @@ body { background: #fafafa url('../img/BkgdSlice.jpg') repeat top center; }
     text-decoration: none !important;
     }
     
-/* Content */
+/* Content - Home */
 .content-left { float: left; width: 61.7%; margin: 64px 0 61px 0; }
 .icons-element, .icons-element-2 { float: left; margin: 0 8.9% 32px 0; }
 .icons-element-4 { float: left; margin: 0 0 32px 0; }
@@ -209,6 +219,10 @@ body { background: #fafafa url('../img/BkgdSlice.jpg') repeat top center; }
 .vendors-logo-1 { float: left; width: 25%; height: 70px; }
 .vendors-logo-2, .vendors-logo-3 { float: left; width: 25%; height: 70px; text-align: center; }
 .vendors-logo-4 { float: left; width: 25%; height: 70px; text-align: right; }
+
+/* Content - Sub */
+.contentblock { float: left; width: 100%; }
+.beginningblock { margin: 198px 0 0 0; }
 
 /* Footer */
 .footer-left { float: left; margin: 30px 2% 26px 0; }
@@ -315,13 +329,14 @@ h6 { font-weight: 400; font-style: italic; padding-bottom: 25px; }
 
 p { padding-bottom: 25px; }
 
+/* Home Styles */
 .headertitle { padding-bottom: 10px; }
 .headercontent { font-size: 20px; line-height: 30px; padding: 0 0 58px 3px; }
 .homecontenttitle { font-size: 26px; line-height: 30px; padding: 0 0 12px 0; }
 .homecontent { padding: 0 0 39px 0; }
 .testimonialcontent { background: url('../img/TestimonialQuote.jpg') no-repeat top left; text-indent: 28px; padding: 3px 0 30px 0; }
 .intro { font-size: 18px; }
-.orange { color: #E57100; }
+.orange, orange { color: #E57100; }
 .white { color: #ffffff; }
 .topfooter { font-size: 20px; font-weight: normal; line-height: 24px; color: #706b5e; padding-bottom: 0; }
 .bottomfooter { font-size: 12px; line-height: 16px; font-weight: bold; color: #403d37; padding-bottom: 0; }
@@ -330,6 +345,9 @@ p { padding-bottom: 25px; }
 .contacttitle { font-size: 40px; line-height: 56px; text-decoration: none !important; }
 .maptitle { font-size: 24px; line-height: 30px; font-weight: bold; padding-bottom: 10px; }
 .mapcontent { font-size: 13px; line-height: 18px; padding-bottom: 10px; }
+
+/* Sub Styles */
+.blockquote { font-size: 20px; font-weight: normal; line-height: 30px; }
 
 a, a:link, a:visited, a:hover, a:active { color: #61abe3; text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -404,75 +422,6 @@ strong { font-weight: bold; }
 .clearfix { *zoom: 1; }
 
 
-
-
-
-
-
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (max-width: 1000px) {
-    .wrapper-2-2 { background: url('../img/NavBkgd2.jpg') no-repeat top left; }
-}
-
-@media only screen and (max-width: 835px) {
-    .tagline { display: none; }
-}
-
-@media only screen and (max-width: 768px) {
-    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
-    .y-wrapper { width: auto; min-width: 0; margin: 0 15px; }
-    .header { width: 100%; padding: 96px 0 58px 0; background: none; }
-    .vendors-hssymbol { width: 125px; }
-    .vendors-left { width: 65%; margin: 0 0 5px 0; }
-    .vendors-right { float: left; width: 92%; margin: 5px 0 105px 0; padding: 35px 4%; background: #E4EEF7 url('../img/VendorsBkgdTop.jpg') no-repeat top center; }
-}
-
-@media only screen and (max-width: 720px) {
-    .nav-element { margin: 0 0 0 25px; }
-}
-
-@media only screen and (max-width: 640px) {
-    .nav-element { display: none; }
-    .nav { float: right; width: 33px; }
-    .nav-button { display: block; }
-    .content-left { width: 100%; margin: 64px 0 0 0; }
-    .content-right { float: left; width: 87%; }
-}
-
-@media only screen and (max-width: 600px) {
-    .wrapper-2 { background: url('../img/BkgdTopGlow.jpg') no-repeat top center; }
-    .wrapper-2-2 { position: relative; }
-    .wrapper-3 { background: url('../img/BkgdTopGlow2.jpg') no-repeat top center; }
-    .header { margin: 0; padding: 74px 0 58px 0; }
-    .vendors-right { width: 88%; padding: 25px 6%; }
-}
-
-@media only screen and (max-width: 480px) {
-    .vendors-logo-1, .vendors-logo-2, .vendors-logo-3, .vendors-logo-4 { width: 50%; text-align: center; }
-    .vendors-logo-3, .vendors-logo-4 { padding: 20px 0 0 0; }
-}
-
-@media only screen and (max-width: 320px) {
-    h1 { font-size: 60px; line-height: 65px; }
-    .icons-element-2, .icons-element-4 { float: right; margin: 0 0 32px 0; }
-    .content-buttons { width: 100%; margin: 0 0 15px 0; }
-    .content-buttons-right { float: left; width: 100%; }
-    .vendors-left { width: 45%; margin: 0; padding: 41px 0 0 0; }
-}
-
-@media print, 
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
 
 
 

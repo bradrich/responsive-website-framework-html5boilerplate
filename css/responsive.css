@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Responsive Design
+   Author: Brad Richardson, Changed
+   ========================================================================== */
+
+@media only screen and (max-width: 1000px) {
+    .x-wrapper-nav { background: url('../img/NavBkgd2.jpg') no-repeat top left; }
+}
+
+@media only screen and (max-width: 835px) {
+    .tagline { display: none; }
+}
+
+@media only screen and (max-width: 768px) {
+    body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+    .y-wrapper { width: auto; min-width: 0; margin: 0 15px; }
+    .header { width: 100%; padding: 96px 0 58px 0; background: none; }
+    .vendors-hssymbol { width: 125px; }
+    .vendors-left { width: 65%; margin: 0 0 5px 0; }
+    .vendors-right { float: left; width: 92%; margin: 5px 0 105px 0; padding: 35px 4%; background: #E4EEF7 url('../img/VendorsBkgdTop.jpg') no-repeat top center; }
+}
+
+@media only screen and (max-width: 720px) {
+    .nav-element { margin: 0 0 0 25px; }
+}
+
+@media only screen and (max-width: 640px) {
+    .nav-element { display: none; }
+    .nav { float: right; width: 33px; }
+    .nav-button { display: block; }
+    .content-left { width: 100%; margin: 64px 0 0 0; }
+    .content-right { float: left; width: 87%; }
+}
+
+@media only screen and (max-width: 600px) {
+    .x-wrapper-navtopglow { background: url('../img/BkgdTopGlow.jpg') no-repeat top center; }
+    .x-wrapper-nav { position: relative; }
+    .x-wrapper-header { background: url('../img/BkgdTopGlow2.jpg') no-repeat top center; }
+    .header { margin: 0; padding: 74px 0 58px 0; }
+    .vendors-right { width: 88%; padding: 25px 6%; }
+}
+
+@media only screen and (max-width: 480px) {
+    .vendors-logo-1, .vendors-logo-2, .vendors-logo-3, .vendors-logo-4 { width: 50%; text-align: center; }
+    .vendors-logo-3, .vendors-logo-4 { padding: 20px 0 0 0; }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 { font-size: 60px; line-height: 65px; }
+    .icons-element-2, .icons-element-4 { float: right; margin: 0 0 32px 0; }
+    .content-buttons { width: 100%; margin: 0 0 15px 0; }
+    .content-buttons-right { float: left; width: 100%; }
+    .vendors-left { width: 45%; margin: 0; padding: 41px 0 0 0; }
+}
+
+@media print, 
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
