@@ -30,6 +30,38 @@
         }, function(){
             // Do nothing
         });
+
+
+        // ******************* //
+        // ----- Buttons ----- //
+        // ___________________ //
+
+        $('.header-button').hover(function(){
+            $(this).removeClass('header-button-gradient');
+        }, function(){
+            $(this).addClass('header-button-gradient');
+        });
+        $('.header-button').mousedown(function(){
+            $(this).addClass('header-button-mousedown');
+        });
+
+        $('.content-buttons').hover(function(){
+            $(this).removeClass('content-buttons-gradient');
+        }, function(){
+            $(this).addClass('content-buttons-gradient');
+        });
+        $('.content-buttons').mousedown(function(){
+            $(this).addClass('content-buttons-mousedown');
+        });
+
+        $('.casestudy-button').hover(function(){
+            $(this).removeClass('casestudy-button-gradient');
+        }, function(){
+            $(this).addClass('casestudy-button-gradient');
+        });
+        $('.casestudy-button').mousedown(function(){
+            $(this).addClass('casestudy-button-mousedown');
+        });
         
         
         // ************************** //
