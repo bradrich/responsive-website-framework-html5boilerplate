@@ -37,7 +37,6 @@ white { color: #ffffff; }
 .nobottompadding { padding-bottom: 0; }
 .testimonialcontent { background: url('../img/TestimonialQuote.jpg') no-repeat top left; text-indent: 28px; padding: 3px 0 30px 0; }
 .topfooter { font-size: 20px; line-height: 24px; color: #706b5e; padding: 0; }
-.bottomfooter { font-size: 12px; line-height: 16px; font-weight: bold; color: #403d37; padding: 0; }
 
 /* Lists */
 ul, ol { padding: 0 0 25px 30px; }
@@ -49,9 +48,9 @@ a:hover { text-decoration: underline; }
 a.question, a.question:link, a.question:hover, a.question:active { background: url('../img/ContentQuestion.jpg') no-repeat top right; padding-right: 23px; }
 
 /* Buttons */
-.header-button, .content-buttons, .casestudy-button {
+.header-button, .content-buttons, .content-buttons-sub, .casestudy-button {
     float: left;
-    width: 290px;
+    width: 280px;
     padding: 20px 0 18px 0;
     margin-bottom: 1px;
     border-radius: 30px;
@@ -67,10 +66,11 @@ a.question, a.question:link, a.question:hover, a.question:active { background: u
     text-decoration: none !important;
     }
 .content-buttons { width: 47%; padding: 14px 0 12px 0; border-radius: 23px; -moz-border-radius: 23px; -webkit-border-radius: 23px; }
+.content-buttons-sub, .casestudy-button { padding: 14px 0 12px 0; border-radius: 23px; -moz-border-radius: 23px; -webkit-border-radius: 23px; }
 .casestudy-button { width: 100%; }
 .content-buttons-right { float: right; }
 
-.header-button-gradient, .content-buttons-gradient, .casestudy-button-gradient {
+.header-button-gradient, .content-buttons-gradient, .content-buttons-sub-gradient, .casestudy-button-gradient {
     background: #8fc3eb; /* Old browsers */
     background: -moz-linear-gradient(top,  #8fc3eb 0%, #60abe2 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8fc3eb), color-stop(100%,#60abe2)); /* Chrome,Safari4+ */
@@ -80,7 +80,7 @@ a.question, a.question:link, a.question:hover, a.question:active { background: u
     background: linear-gradient(to bottom,  #8fc3eb 0%,#60abe2 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc3eb', endColorstr='#60abe2',GradientType=0 ); /* IE6-9 */
     }
-.header-button-mousedown, .content-buttons-mousedown, .casestudy-button-mousedown {
+.header-button-mousedown, .content-buttons-mousedown.content-buttons-sub-mousedown, .casestudy-button-mousedown {
     margin-top: 1px;
     background: #60abe2; /* Old browsers */
     background: -moz-linear-gradient(top,  #60abe2 0%, #8fc3eb 100%); /* FF3.6+ */

@@ -144,8 +144,14 @@ body { background: #221E13; }
     background: linear-gradient(to bottom,  #402e00 0%,#503a00 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#402e00', endColorstr='#503a00',GradientType=0 ); /* IE6-9 */
     }
-.nav-drop-element, .nav-drop-tagline { float: left; width: 175px; padding: 15px 25px; border-bottom: solid 1px #553d00; color: #ffffff !important; text-shadow: 0 2px 0 #402e00; text-decoration: none !important; }
+.nav-drop-element, .nav-drop-tagline, .nav-drop-element-on { float: left; width: 175px; padding: 15px 25px; border-bottom: solid 1px #553d00; color: #ffffff !important; text-shadow: 0 2px 0 #402e00; text-decoration: none !important; }
+.nav-drop-element:hover, .nav-drop-tagline:hover, .nav-drop-element-on { color: #e57100 !important; }
+.nav-drop-element-on, .nav-drop-nobottomborder, .nav-drop-tagline { border-bottom: 0; }
 .nav-drop-tagline { border-bottom: 0; }
+.nav-drop-children { float: left; width: 150px; padding: 0 25px 15px 45px; border-bottom: solid 1px #553d00; color: #e57100; }
+.nav-drop-children li { margin: 0 0 5px 0; }
+.nav-drop-children li a { color: #ffffff !important; text-decoration: none !important; }
+.nav-drop-children li a:hover { color: #e57100 !important; }
 .nav-drop-tail { width: 20px; height: 15px; position: absolute; top: -15px; right: 10px; }
 
 /* Header */
@@ -180,8 +186,9 @@ body { background: #221E13; }
 
 /* Content - Sub */
 .contentblock-beginning { float: left; width: 100%; margin: 198px 0 23px 0; }
-.contentblock-left { float: left; width: 60.8%; margin: 0 8% 98px 0; }
-.contentblock-right { float: right; width: 31.2%; margin-bottom: 98px; }
+.contentblock-left { float: left; width: 100%; margin: 0 -392px 98px 0; }
+.contentblock-left-inner { float: left; margin-right: 392px; }
+.contentblock-right { float: right; width: 312px; margin-bottom: 98px; }
 
 .side-buttons { float: left; width: 100%; border-bottom: solid 1px #d6d6d6; margin-bottom: 50px; }
 .side-buttons-element { float: left; width: 100%; margin-bottom: 50px; }
@@ -216,7 +223,7 @@ body { background: #221E13; }
 
 .bottomfooter-left { float: left; margin: 12px 0 12px 0; }
 .bottomfooter-link { float: left; margin: 0 12px 0 0; font-size: 12px; line-height: 16px; font-weight: bold; color: #403d37 !important; text-decoration: none !important; }
-.bottomfooter-right { float: right; text-align: right; margin: 12px 0 12px 0; }
+.bottomfooter-right { float: right; text-align: right; margin: 12px 0 12px 0; font-size: 12px !important; line-height: 16px; font-weight: bold; color: #403d37 !important; padding: 0; text-decoration: none !important; }
 
 
 

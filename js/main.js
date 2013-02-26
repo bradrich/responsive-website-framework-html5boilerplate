@@ -54,6 +54,15 @@
             $(this).addClass('content-buttons-mousedown');
         });
 
+        $('.content-buttons-sub').hover(function(){
+            $(this).removeClass('content-buttons-sub-gradient');
+        }, function(){
+            $(this).addClass('content-buttons-sub-gradient');
+        });
+        $('.content-buttons-sub').mousedown(function(){
+            $(this).addClass('content-buttons-sub-mousedown');
+        });
+
         $('.casestudy-button').hover(function(){
             $(this).removeClass('casestudy-button-gradient');
         }, function(){
