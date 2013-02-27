@@ -44,7 +44,7 @@
     .x-wrapper-nav { position: relative; }
     .x-wrapper-header { background: url('../img/BkgdTopGlow2.jpg') no-repeat top center; }
     .header { margin: 0; padding: 74px 0 58px 0; }
-    .beginningblock, .contentblock-beginning { margin: 0; padding: 74px 0 130px 0; }
+    .beginningblock { margin: 0; padding: 74px 0 130px 0; }
     .content-right, .vendors-right { width: 88%; padding: 25px 6%; }
 }
 

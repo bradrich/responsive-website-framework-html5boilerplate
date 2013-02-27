@@ -18,6 +18,11 @@
 /* Body */
 body { font: normal normal 16px/24px Bliss, Lucida Grande, sans-serif; color: #402e00; }
 
+/* Images */
+.imgleft, .imgleftnoborder { border: solid 5px #e4eef7; margin: 0 25px 5px 0; }
+.imgright, .imgrightnoborder { border: solid 5px #e4eef7; margin: 0 0 5px 25px; }
+.imgleftnoborder, .imgrightnoborder { border: 0; }
+
 /* Headers */
 h1 { font: normal 500 70px/75px "Serifa Medium", Cambria, Georgia, serif; font-size-adjust: 0.48; padding-bottom: 10px; }
 h2 { font: normal 500 25px/31px "Serifa Medium", Cambria, Georgia, serif; font-size-adjust: 0.48; padding-bottom: 12px; }
@@ -31,12 +36,14 @@ p { padding-bottom: 25px; }
 strong { font-weight: bold; }
 em { font-style: italic; }
 
-orange { color: #e57100; }
+.orange { color: #e57100; }
 white { color: #ffffff; }
+.red { color: #ff0000; }
 
 .nobottompadding { padding-bottom: 0; }
 .testimonialcontent { background: url('../img/TestimonialQuote.jpg') no-repeat top left; text-indent: 28px; padding: 3px 0 30px 0; }
 .topfooter { font-size: 20px; line-height: 24px; color: #706b5e; padding: 0; }
+.red { color: #ff0000 !important; }
 
 /* Lists */
 ul, ol { padding: 0 0 25px 30px; }

@@ -8,16 +8,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Making iT Easy: HillSouth</title>
         <meta name="description" content="">
+        <meta name="keywords" content="">
         <!-- <meta name="viewport" content="width=device-width"> -->
         <meta name="viewport" content="initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="/apple-touch-icon-144x144-precomposed.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/elements.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
         
         <!-- FontDeck Inclusion -->
         <script type="text/javascript">
@@ -33,6 +35,11 @@
                 s.parentNode.insertBefore(wf, s);
             })();
         </script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
     <!-- <body onload="OnLoad()"> -->
     <body>
@@ -95,7 +102,7 @@
                         
                         <!-- Content -->
                         <div class="header">
-                            <h1>We are <orange>HillSouth</orange></h1>
+                            <h1>We are <span class="orange">HillSouth</span></h1>
                             <h4>An innovative iT consulting firm, focused on delivering proactive support, stability and outstanding customer service to small and medium-sized businesses using technologies that are physical, virtual, hybrid or cloud.</h3>
                             <a class="header-button header-button-gradient" href="#">FIND YOUR SOLUTION</a>
                         </div>
@@ -250,11 +257,11 @@
         <!-- End Bottom Footer -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script src="js/vendor/googlemapping.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="scripts/vendor/googlemapping.js"></script>
+        <script src="scripts/plugins.js"></script>
+        <script src="scripts/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
